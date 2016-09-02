@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>desglosador de impuestos</title>
+<style type="text/css">
+body {
+	text-align: center; 
+	font-family: monospace; 
+	font-weight: bold;
+	margin-top: 20%; 
+	background-color: black; 
+	color: green; 
+}
+input, button {
+	background-color: green;
+	color: black; 
+	border-style: none;
+	font: inherit;
+}
+footer {margin-top: 3em;}
+</style>
+</head>
+<body>
+<script type="text/javascript" >
+	
+function main() {	
+	
+	var val=document.getElementById("val").value;	
+	var iva=document.getElementById("iva").value/100;	
+	
+	var prd=val*iva;	
+	var inc=val*(1+iva);
+	var ded=val*(1-iva);
+		
+	alert("Impuesto: " + prd.toFixed(2) + "€" + "\nImpuesto incluido: " + inc.toFixed(2) + "€"+ "\nImpuesto deducido: " + ded.toFixed(2)+ "€");
+}
+</script>
+	
+<p>Bienvenido al desglosador de impuestos (Iva, Comisiones, etc)</p>	
+
+<p>base imponible <input id="val" /> €</p>
+<p>tasa impositiva <input id="iva" /> %</p>
+
+<p><button onclick="main()">calcular</button></p>
+
+<footer>RW Labs S.I. GPLv3</footer>
+</body>
+</html>
