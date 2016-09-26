@@ -50,7 +50,13 @@ article {
 padding-left: 0em;
 }
 
-.rvdeveloper, .rvdeveloper ul, .rvdeveloper li, .rvdeveloper p {
+.rvdeveloper{
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	}
+
+/*.rvdeveloper, .rvdeveloper ul, .rvdeveloper li, .rvdeveloper p {
 	text-align: center;
 	list-style-type: none; 
 	float: left;
@@ -71,14 +77,14 @@ padding-left: 0em;
 		/*padding: auto;
 		margin: auto;		
 		height: 110px;
-		width: 510px;*/
+		width: 510px;
 		}
 	.rvdeveloper li:active {border-radius: 30px;}	
 
 .rvdeveloper p {
 	font-weight: bold;
 	line-height: 50%;
-	}
+	}*/
 			
 .rvdeveloper-imagen {
 	text-align: center;
@@ -158,7 +164,12 @@ padding-left: 0em;
 			}
 
 
-
+.rvdeveloper h1 {	
+	color: ;
+	margin: 25px;
+	font-size: 42px;
+	text-align: center;
+	}
 
 
 .rvdeveloper a ´{
@@ -176,15 +187,15 @@ h3 {
 footer p{	text-align: center;
 			margin-bottom: 0.25em;
 			padding-top: 1em;
-
 		}
 
 footer {
 	text-align: center;
 	padding-bottom: 1%;
   	position: relative;
- 	margin-top: -180px; /* negative value of footer height */
-  	height: 180px;
+ 	/*margin-top: -180px;  negative value of footer height 
+  	height: 180px;*/
+  	height: 80px
   	clear: both;
 } 
 		
